@@ -1,7 +1,11 @@
+const env = require("dotenv");
+
+env.config();
+
 const configApp = {
-  port: 3000,
+  port: process.env.PORT,
   database: {
-    url: "mongodb+srv://admin:hAA57nIQoUHmLuN9@cluster0.gcu8lri.mongodb.net/courses",
+    url: process.env.MONGODB_URL,
   },
 };
 
