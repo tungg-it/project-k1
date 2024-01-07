@@ -1,7 +1,8 @@
-const express = require("express");
-const config = require("./config/config");
-const db = require("./database/config");
-const router = require("./routers/root");
+import express from 'express';
+import config from './config/config';
+import db from './database/config';
+import router from './routers/root';
+
 const app = express();
 const port = config.port;
 

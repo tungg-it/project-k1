@@ -1,4 +1,4 @@
-const env = require("dotenv");
+import env from 'dotenv';
 
 env.config();
 
@@ -9,4 +9,4 @@ const configApp = {
   },
 };
 
-module.exports = configApp;
+export default configApp;

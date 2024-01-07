@@ -1,0 +1,17 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@routers": "./src/routers",
+          "@config": "./src/config",
+          "@controllers": "./src/controllers",
+          "@database": "./src/database"
+        }
+      }
+    ]
+  ]
+}

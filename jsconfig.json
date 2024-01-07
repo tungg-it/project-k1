@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@routers/*": ["./src/routers/*"],
+      "@config/*": ["./src/config/*"],
+      "@controllers/*": ["./src/common/controllers/*"],
+      "@database/*": ["./src/database/*"]
+    }
+  }
+}

@@ -1,14 +1,13 @@
-const mongoose = require("mongoose");
-
-const config = require("../config/config");
+import mongoose from 'mongoose';
+import config from '@config/config';
 
 async function connect() {
   try {
     await mongoose.connect(config.database.url);
-    console.log("Connect successfully!!!");
+    console.log('Connect successfully!!!');
   } catch (error) {
-    console.log("Connect failure!!!");
+    console.log('Connect failure!!!');
   }
 }
 
-module.exports = { connect };
+export default { connect };

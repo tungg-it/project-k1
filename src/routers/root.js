@@ -1,12 +1,12 @@
-const express = require("express");
-const productRouter = require("./product.router");
+import express from 'express';
+import productRouter from './product.router';
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Hello World!");
+router.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
-router.use("/products", productRouter);
+router.use('/products', productRouter);
 
-module.exports = router;
+export default router;
